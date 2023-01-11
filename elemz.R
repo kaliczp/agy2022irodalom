@@ -35,3 +35,10 @@ boxplot(tomeg ~ komb2 , bendo[bendo$vadfaj == "damszarvas",], main = "Dam")
 dput(levels(factor(bendo$Komb)))
 dput(paste(rep(c("fiatal", "felnott"), 6), rep(names(gdta[,20:25]), each = 2), sep = "_"))
 dput(paste(rep(c("f","F"),6), rep(c("E","K","H","T","Er","Mg"),each =2), sep = "_"))
+
+## ggplot
+ggplot(bendo, aes(x=komb2, y=tomeg))+
+  geom_bar(stat="identity")
+
+ggplot(bendo, aes(x=komb2, y=tomeg))+
+  geom_boxplot()
