@@ -5,3 +5,7 @@ names(irod) <- fejléc
 
 ## Faktorok
 jelleg <- factor(irod$`felmérés jellege`, levels = c("lokális", "regionális", "országos", "Európa", "globális"), ordered = TRUE)
+
+## xlsx beolvasás
+library(readxl)
+irod2 <- as.data.frame(read_excel("Irodalom_gyűjtemény.xlsx"))
