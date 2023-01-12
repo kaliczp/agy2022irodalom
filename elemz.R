@@ -28,7 +28,7 @@ bendo$komb2 <- factor(bendo$Komb, levels = c("fiatal_Egysziku", "felnott_Egyszik
                      labels = c("f_E", "F_E", "f_K", "F_K", "f_H", "F_H", "f_T", "F_T", "f_Er", 
                                 "F_Er", "f_Mg", "F_Mg"))
 
-boxplot(tomeg ~ komb2 , bendo[bendo$vadfaj == "damszarvas",], main = "Dam")
+boxplot(tomeg ~ komb2 , bendo[bendo$vadfaj == "damszarvas",], main = "Dam", col = c("lightgray", "darkgray"))
 
 
 ## csak a szerkesztéshez
